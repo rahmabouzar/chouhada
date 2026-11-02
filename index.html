@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أسماء خالدة – شهداء الثورة التحريرية</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap hd">
+<img alt="IEEE Student Branch USTO" src="assets/logo-ieee-usto.png">
+<span>مبادرة طلابية لإحياء ذاكرة الشهداء</span>
+</div></header>
+
+<section class="hero"><div class="wrap">
+<div>
+<h1>مجدٌ وخلود لشهداء الثورة التحريرية</h1>
+<p>اكتب اسمك الأول وتعرّف على شهداء حملوا الاسم نفسه، ثم ابحث عن سيرتهم ونضالهم.</p>
+<div class="count"><b id="cnt">0</b><span>اسمًا في هذه الصفحة</span></div>
+</div>
+<img class="mon" alt="العلم الوطني الجزائري" src="assets/algeria-flag.png">
+</div></section>
+
+<main class="wrap">
+<div class="tools">
+<section class="panel" aria-labelledby="s1">
+<h2 id="s1">البحث بالاسم الأول</h2>
+<p class="hint">أدخل الاسم دون اللقب، بالعربية أو الفرنسية. مثال: مصطفى، Ali، Mohamed</p>
+<div class="row">
+<input id="q" type="search" placeholder="اكتب الاسم الأول…" autocomplete="off" aria-label="الاسم الأول">
+<button class="go" id="goBtn">بحث</button>
+</div>
+</section>
+<section class="panel" aria-labelledby="s2">
+<h2 id="s2">البحث بالحرف الأول</h2>
+<p class="hint">الحروف المتاحة فقط تعمل؛ الباهتة لا تتوفر لها أسماء بعد.</p>
+<div class="tabs" role="group" aria-label="لغة الحروف">
+<button id="tAr" aria-pressed="true">العربية</button>
+<button id="tFr" aria-pressed="false">Français</button>
+</div>
+<div class="letters" id="letters"></div>
+</section>
+</div>
+
+<div class="bar"><div class="status" id="status" aria-live="polite"></div><button class="all" id="allBtn">عرض كل الأسماء</button></div>
+<div class="grid" id="grid"></div>
+</main>
+
+<footer><div class="wrap">
+<p><b>تنبيه:</b> جُمعت الأسماء من مصادر تاريخية منشورة. تحقّق من كتابة الألقاب بالعربية والتواريخ في السجلات الرسمية (وزارة المجاهدين وذوي الحقوق) قبل الاعتماد عليها.</p>
+<p>IEEE Student Branch USTO – رحم الله شهداءنا الأبرار</p>
+</div></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
